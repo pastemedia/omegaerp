@@ -1,0 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .modal-input {
+    @apply w-full p-3 border border-slate-200 rounded-lg focus:ring-2 focus:ring-blue-500 outline-none transition-all placeholder:text-slate-400 text-slate-800 font-medium;
+  }
+
+  .modal-save {
+    @apply w-full py-4 bg-blue-600 text-white font-bold hover:bg-blue-500 rounded-lg shadow-lg shadow-blue-200 transition-all mt-4 active:scale-[0.98];
+  }
+}
+
+body {
+  @apply selection:bg-blue-100 selection:text-blue-900;
+}
