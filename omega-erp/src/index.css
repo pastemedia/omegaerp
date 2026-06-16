@@ -1,0 +1,37 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .modal-input {
+    @apply w-full p-4 bg-slate-50 border border-slate-200 rounded-2xl focus:ring-4 focus:ring-blue-500/10 focus:border-blue-500 outline-none transition-all placeholder:text-slate-300 text-slate-800 font-bold text-sm;
+  }
+
+  .modal-save {
+    @apply w-full py-5 bg-blue-600 text-white font-black uppercase tracking-[0.2em] text-xs hover:bg-blue-500 rounded-2xl shadow-2xl shadow-blue-900/30 transition-all mt-6 active:scale-[0.98];
+  }
+
+  .label {
+    @apply text-[9px] font-black text-slate-400 uppercase tracking-widest block mb-2 ml-1;
+  }
+
+  .header-btn {
+    @apply px-6 py-2.5 rounded-xl flex items-center gap-2 bg-blue-600 text-white font-black text-xs uppercase tracking-widest hover:bg-blue-500 transition-all shadow-lg shadow-blue-200 active:scale-95;
+  }
+}
+
+body {
+  @apply selection:bg-blue-100 selection:text-blue-900 antialiased;
+}
+
+::-webkit-scrollbar {
+  @apply w-1.5;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-slate-200 rounded-full hover:bg-slate-300 transition-colors;
+}
